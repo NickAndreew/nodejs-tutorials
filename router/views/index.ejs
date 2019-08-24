@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NodeJs Tutorial</title>
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SitePoint">
+        <link rel="stylesheet" href="/public/css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <h1>You searched for : <%= data.userQuery %></h1>
+                <% if(data.loggedIn){ %>
+                    <h2> You are logg in as : <%= data.username %></h2>
+                    <% } %>
+                <div>
+                    <ul>
+                        <% data.searchResults.forEach(result=>{ %>
+                            <li><%= result %></li> 
+                        <% }); %>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </body>
+</html>

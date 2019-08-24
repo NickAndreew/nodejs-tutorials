@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NodeJs Tutorial</title>
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SitePoint">
+        <link rel="stylesheet" href="/public/css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <h1>Hello World NoobCoder.com</h1>
+                <form action="/" method="POST" id="form">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="text" class="form-control" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <button type="submit" class="btn btm-default">Sumbit</button>
+                </form>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- <script>
+            $(document).ready(() =>{
+                $('#form').submit((e) => {
+                    e.preventDefault();
+                    $.ajax({
+                        url: '/',
+                        type: 'post', 
+                        contentType: 'application/json',
+                        data: JSON.stringify($('#form').serializeArray()),
+                        success: (response) => {
+                            console.log('success recieved');
+                            console.log(response);
+                        }
+                    });
+                })
+            });
+        </script> -->
+    </body>
+</html>
